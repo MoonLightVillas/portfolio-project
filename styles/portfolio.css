@@ -20,12 +20,6 @@ h6 {
   font-weight: bold;
 }
 
-img {
-  width: 450px;
-  border-radius: 20px;
-  height: 200px;
-}
-
 h1 {
   font-size: 96px;
   line-height: 1.5;
@@ -117,8 +111,7 @@ p {
 }
 
 .logo {
-  width: 150px;
-  height: 40px;
+  max-height: 40px;
 }
 
 nav {
@@ -134,7 +127,7 @@ nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
-  margin: 15px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -153,7 +146,7 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--branding-color);
+  background: var(--secondary-color);
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -162,11 +155,10 @@ footer .contact-box p {
   margin: 0;
 }
 
-footer .email-link{
+footer .email-link {
   text-decoration: none;
   color: black;
   font-size: 24px;
-  text-align: center;
 }
 
 footer .email-link:hover {
@@ -176,7 +168,7 @@ footer .email-link:hover {
 footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
-  color: var(--secondary-color);
+  background: var(--secondary-color);
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -188,14 +180,10 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
-nav a:hover {
-  color: var(--branding-color);
-}
-
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.5;
   }
 
   h2 {
@@ -219,13 +207,5 @@ nav a:hover {
     padding: 0;
     text-align: center;
   }
-
-  nav a {
-    font-size: 15px;
-  }
-  footer .contact-box {
-    padding: 30px;
-  }
-  
-
 }
+
